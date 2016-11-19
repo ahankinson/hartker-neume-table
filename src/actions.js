@@ -7,7 +7,7 @@ export function fetchAnnotations ()
 {
     return (dispatch) =>
     {
-        return fetch('/annotations.json')
+        return fetch('annotations.json')
                 .then((response) => {
                     return response.json()
                 })

@@ -24262,7 +24262,7 @@
 	
 	function fetchAnnotations() {
 	    return function (dispatch) {
-	        return fetch('/annotations.json').then(function (response) {
+	        return fetch('annotations.json').then(function (response) {
 	            return response.json();
 	        }).then(function (payload) {
 	            dispatch(receiveAnnotations(payload));

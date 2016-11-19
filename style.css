@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+
+body {
+    font-family: "Lora", serif;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.image-instance {
+    flex: 0 0 auto;
+    border: 1px solid #555;
+    padding: 8px;
+    margin: 8px;
+    text-align: center;
+}
+
+.image-instance:hover {
+    background: #bbb;
+}

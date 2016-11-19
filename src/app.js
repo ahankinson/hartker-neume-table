@@ -53,7 +53,8 @@ class Application extends React.Component
         return (
             <div>
                 <select onChange={ this.onSelectChange.bind(this) }>
-                { this.props.annotations.map ( (annot, idx) =>
+                    <option>Select a neume</option>
+                    { this.props.annotations.map ( (annot, idx) =>
                     {
                         return (
                             <option key={ idx } value={ annot.type }>{ annot.type } ({ annot.urls.length })</option>

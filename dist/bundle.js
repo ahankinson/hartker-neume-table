@@ -150,6 +150,11 @@
 	                _react2.default.createElement(
 	                    "select",
 	                    { onChange: this.onSelectChange.bind(this) },
+	                    _react2.default.createElement(
+	                        "option",
+	                        null,
+	                        "Select a neume"
+	                    ),
 	                    this.props.annotations.map(function (annot, idx) {
 	                        return _react2.default.createElement(
 	                            "option",

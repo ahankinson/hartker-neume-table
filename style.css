@@ -1,7 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+/*@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');*/
+/*@import url('https://fonts.googleapis.com/css?family=Fredoka+One');*/
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+
+html {
+    height: 100%;
+}
 
 body {
-    font-family: "Lora", serif;
+    font-family: "Jim Nightshade", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+select {
+    font-size: 1.2rem;
+}
+
+#content {
+    flex: 1;
+    margin: 8px;
 }
 
 .image-container {
@@ -12,12 +32,35 @@ body {
 
 .image-instance {
     flex: 0 0 auto;
-    border: 1px solid #555;
+    border: 1px solid #aaa;
     padding: 8px;
     margin: 8px;
     text-align: center;
 }
 
 .image-instance:hover {
-    background: #bbb;
+    background: #ddd;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+    display: flex;
+    margin-top: 1em;
+    border-top: 3px double #6D6D6D;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #A0A0A0;
+}
+
+footer div {
+    text-align: center;
+    flex: 0 0 auto;
+    margin: 0 2rem;
+}
+
+footer div p {
+    margin: 1rem 0;
 }
